@@ -19,5 +19,5 @@ model Notification {
   createdAt   DateTime  @default(now())
 
   @@index([recipientId])
-  @@map("Notifications")
+  @@map("notifications")
 }
