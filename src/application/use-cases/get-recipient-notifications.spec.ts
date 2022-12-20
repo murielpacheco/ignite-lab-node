@@ -21,7 +21,6 @@ describe('Get recipients notifications', () => {
     const { notifications } = await getRecipientNotifications.execute({
       recipientId: 'recipient-1',
     });
-    console.log(notifications);
-    expect(notifications.length).toBeGreaterThan(1);
+    expect(notifications.length).toEqual(2);
   });
 });
