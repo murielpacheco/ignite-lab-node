@@ -8,9 +8,9 @@ type Override = Partial<NotificationProps>;
 
 export function makeNotification(override: Override = {}) {
   return new Notification({
-    content: new Content('ololo'),
-    category: 'outro-asdsa',
-    recipientId: 'recipient-2',
+    content: new Content('Test content'),
+    category: 'category-test',
+    recipientId: 'recipient-1',
     ...override,
   });
 }
